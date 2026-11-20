@@ -34,6 +34,6 @@ How it works: the MyNOS Reference Manual, 9.8 and appendix H.9, and
 | Package | What it is | Licence |
 |---|---|---|
 | `2048` | 2048, the sliding tile game, by Philip Xu ([2048-ml](https://github.com/pyx/2048-ml), 2014), written for OCaml's `Graphics` and unchanged | BSD-3-Clause |
-| `tree` | A tree in the wind: a fractal tree under a night sky, written by MyNOS's agent inside MyNOS (the manual's example of 20.6) | GPL-2.0-or-later |
+| `windtree` | A tree in the wind: a fractal tree under a night sky, written by MyNOS's agent inside MyNOS (the manual's example of 20.6) | GPL-2.0-or-later |
 
 Each archive carries its own licence, as its `package.json` names it.

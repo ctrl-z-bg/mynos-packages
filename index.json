@@ -4,8 +4,8 @@
     {"name": "2048", "version": "1.0", "description": "2048, the sliding tile game, in a window (2048-ml by Philip Xu, 2014): h j k l slide the tiles, q quits",
      "license": "BSD-3-Clause", "archive": "packages/2048-1.0.tar", "size": 440320,
      "blake2b-256": "0557a5ba07d4c1ce863ed173ebb9cede7798f193cff8343f6202ce5450b41ccf", "mynos": "2026.11-4c0cca7"},
-    {"name": "tree", "version": "1.0", "description": "A tree in the wind: a fractal tree under a night sky, written by the agent inside MyNOS (manual 20.6); the mouse sets the wind, q quits",
-     "license": "GPL-2.0-or-later", "archive": "packages/tree-1.0.tar", "size": 409600,
-     "blake2b-256": "6524244e45878a7726862bd820ab5d263aeb09301946dbebcc7ceceab846d6f8", "mynos": "2026.11-4c0cca7"}
+    {"name": "windtree", "version": "1.0", "description": "A tree in the wind: a fractal tree under a night sky, written by the agent inside MyNOS (manual 20.6); the mouse sets the wind, q quits",
+     "license": "GPL-2.0-or-later", "archive": "packages/windtree-1.0.tar", "size": 409600,
+     "blake2b-256": "78ee153ca08ac10f3cb037c02d18c0564621d91c0c9e15f645f635d7ff19a797", "mynos": "2026.11-4c0cca7"}
   ]
 }
