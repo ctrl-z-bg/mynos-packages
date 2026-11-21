@@ -10,19 +10,23 @@ mynos:/$ 2048                 (in a Terminal window of the graphical session)
 ```
 
 This repository holds only what `pkg` downloads, from
-`raw.githubusercontent.com`:
+`raw.githubusercontent.com`, and the packages' documentation:
 
 ```
 index.json                    the packages: name, version, description,
                               licence, archive, size, BLAKE2b-256 hash,
-                              the MyNOS they were built on
+                              the MyNOS they were built on, the packages
+                              they need, their commands
 packages/NAME-VERSION.tar     one archive per package and version
+docs/NAME.md                  a package's documentation
 ```
 
 An archive holds `package.json`, the program as OCaml bytecode, its
-sources in `src/`, and its licence. `pkg` checks the archive's size and
-hash against the index, then installs the bytecode if this MyNOS can run
-it, or compiles the sources inside MyNOS if it cannot.
+sources in `src/`, its licence and its documentation. `pkg` checks the
+archive's size and hash against the index, installs first the packages
+it needs, then installs the bytecode if this MyNOS can run it, or
+compiles the sources inside MyNOS if it cannot. A package of data (a
+story, a game) has no program: the package it needs plays it.
 
 The packages are described and built in the main repository
 (`packages/NAME/spec`, `tools/pkg-build.sh`); this one is its output.
@@ -31,9 +35,41 @@ How it works: the MyNOS Reference Manual, 9.8 and appendix H.9, and
 
 ## Packages
 
+**Commands, for the terminal**
+
 | Package | What it is | Licence |
 |---|---|---|
-| `2048` | 2048, the sliding tile game, by Philip Xu ([2048-ml](https://github.com/pyx/2048-ml), 2014), written for OCaml's `Graphics` and unchanged | BSD-3-Clause |
-| `windtree` | A tree in the wind: a fractal tree under a night sky, written by MyNOS's agent inside MyNOS (the manual's example of 20.6) | GPL-2.0-or-later |
+| [`utils`](docs/utils.md) | `grep`, `wc`, `head`, `tail`, `sort`, `uniq`, `find`, `du`, `hexdump`, `tree` | GPL-2.0-or-later |
+| [`calc`](docs/calc.md) | a calculator of exact numbers: integers without limit, fractions, factors | GPL-2.0-or-later |
+| [`manual`](docs/manual.md) | the MyNOS Reference Manual inside MyNOS: `man pkg`, `man Gui`, and a window to read it | GPL-2.0-or-later |
+| [`scheme`](docs/scheme.md) | Scheme (R5RS): OCS by Ville-Pertti Keinonen, changed for OCaml 5 | BSD-2-Clause |
+
+**Windows, for the graphical session**
+
+| Package | What it is | Licence |
+|---|---|---|
+| [`wiki`](docs/wiki.md) | Wikipedia: search, read, follow the links (and `wiki TERM` in the terminal) | GPL-2.0-or-later |
+| [`feeds`](docs/feeds.md) | a reader of news feeds, RSS and Atom | GPL-2.0-or-later |
+| [`view`](docs/view.md) | an image viewer: PNG, BMP, PPM, PGM, PBM | GPL-2.0-or-later |
+| [`paint`](docs/paint.md) | drawing with the mouse, saved as PNG | GPL-2.0-or-later |
+| [`life`](docs/life.md) | Conway's Game of Life, with famous patterns and RLE files | GPL-2.0-or-later |
+| `windtree` | a tree in the wind, written by MyNOS's agent inside MyNOS (the manual's 20.6) | GPL-2.0-or-later |
+
+**Games**
+
+| Package | What it is | Licence |
+|---|---|---|
+| [`mines`](docs/mines.md) | mines, at three levels | GPL-2.0-or-later |
+| [`blocks`](docs/blocks.md) | falling blocks | GPL-2.0-or-later |
+| [`snake`](docs/snake.md) | the snake that grows | GPL-2.0-or-later |
+| [`sudoku`](docs/sudoku.md) | sudoku, made on the spot, with hints | GPL-2.0-or-later |
+| [`solitaire`](docs/solitaire.md) | Klondike patience | GPL-2.0-or-later |
+| `2048` | 2048, by Philip Xu ([2048-ml](https://github.com/pyx/2048-ml), 2014), unchanged | BSD-3-Clause |
+| [`minotaur`](docs/minotaur.md) | a text adventure inside MyNOS: you are a message, the Minotaur keeps the ports | GPL-2.0-or-later |
+| [`zmachine`](docs/zmachine.md) | a Z-machine interpreter: Infocom's and Inform's interactive fiction | GPL-2.0-or-later |
+| [`camlboy`](docs/camlboy.md) | a Game Boy: CAMLBOY, by linoscope, in a window of MyNOS's | MIT |
+| `tobutobugirl` | Tobu Tobu Girl (Tangram Games, 2017), for the Game Boy; needs `camlboy` | MIT, CC BY 4.0 |
 
 Each archive carries its own licence, as its `package.json` names it.
+Two packages give MyNOS's agent a tool: `wiki` (`wikipedia`) and `calc`
+(`calculate`).
