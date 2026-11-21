@@ -69,7 +69,15 @@ How it works: the MyNOS Reference Manual, 9.8 and appendix H.9, and
 | [`zmachine`](docs/zmachine.md) | a Z-machine interpreter: Infocom's and Inform's interactive fiction | GPL-2.0-or-later |
 | [`camlboy`](docs/camlboy.md) | a Game Boy: CAMLBOY, by linoscope, in a window of MyNOS's | MIT |
 | `tobutobugirl` | Tobu Tobu Girl (Tangram Games, 2017), for the Game Boy; needs `camlboy` | MIT, CC BY 4.0 |
+| `zork1` | Zork I: The Great Underground Empire (Infocom, 1980); needs `zmachine` | MIT |
+| `zork2` | Zork II: The Wizard of Frobozz (Infocom, 1981); needs `zmachine` | MIT |
+| `zork3` | Zork III: The Dungeon Master (Infocom, 1982); needs `zmachine` | MIT |
 
 Each archive carries its own licence, as its `package.json` names it.
+The Zork story files are those Microsoft published under the MIT
+licence in 2025 ([historicalsource/zork1](https://github.com/historicalsource/zork1),
+[zork2](https://github.com/historicalsource/zork2),
+[zork3](https://github.com/historicalsource/zork3)), unchanged; the
+games' names are trademarks, which the licence does not cover.
 Two packages give MyNOS's agent a tool: `wiki` (`wikipedia`) and `calc`
 (`calculate`).

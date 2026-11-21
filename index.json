@@ -80,6 +80,18 @@
     {"name": "zmachine", "version": "1.0", "description": "A Z-machine interpreter: the interactive fiction of Infocom and of Inform (.z3, .z5, .z8), in a window or in the terminal",
      "license": "GPL-2.0-or-later", "archive": "packages/zmachine-1.0.tar", "size": 481280,
      "blake2b-256": "b30761af3aca7bdad2ecf9c093316cda8986cca6fcc19e4dedcfbdfef62fa9d7", "mynos": "2026.11-21b9dfa",
-     "depends": [], "programs": ["zmachine"]}
+     "depends": [], "programs": ["zmachine"]},
+    {"name": "zork1", "version": "1.0", "description": "Zork I: The Great Underground Empire (Infocom, 1980; release 119), the story file, played by zmachine; type zork1",
+     "license": "MIT", "archive": "packages/zork1-1.0.tar", "size": 92160,
+     "blake2b-256": "eb916aed2b6cb03e48f1438b80e856e6e6f82ef6dee9d624de65c4299f747398", "mynos": "2026.11-21b9dfa",
+     "depends": ["zmachine"], "programs": ["zork1"]},
+    {"name": "zork2", "version": "1.0", "description": "Zork II: The Wizard of Frobozz (Infocom, 1981; release 63), the story file, played by zmachine; type zork2",
+     "license": "MIT", "archive": "packages/zork2-1.0.tar", "size": 102400,
+     "blake2b-256": "11689af97ae888e453bade53f9e2091015f62b0e07b67b2271ff69235c21fa7f", "mynos": "2026.11-21b9dfa",
+     "depends": ["zmachine"], "programs": ["zork2"]},
+    {"name": "zork3", "version": "1.0", "description": "Zork III: The Dungeon Master (Infocom, 1982; release 25), the story file, played by zmachine; type zork3",
+     "license": "MIT", "archive": "packages/zork3-1.0.tar", "size": 102400,
+     "blake2b-256": "8ba07717415c018da1c2735e32dafa3dff361c925b2f2260f87299b1e4a034dc", "mynos": "2026.11-21b9dfa",
+     "depends": ["zmachine"], "programs": ["zork3"]}
   ]
 }
