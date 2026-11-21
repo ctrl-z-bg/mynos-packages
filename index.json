@@ -79,7 +79,7 @@
      "depends": [], "programs": ["windtree"]},
     {"name": "zmachine", "version": "1.0", "description": "A Z-machine interpreter: the interactive fiction of Infocom and of Inform (.z3, .z5, .z8), in a window or in the terminal",
      "license": "GPL-2.0-or-later", "archive": "packages/zmachine-1.0.tar", "size": 481280,
-     "blake2b-256": "b30761af3aca7bdad2ecf9c093316cda8986cca6fcc19e4dedcfbdfef62fa9d7", "mynos": "2026.11-21b9dfa",
+     "blake2b-256": "713bef1ef490202dd7b74a6ecaac690eaf6e4fa4e8d43d9dcafa678c6e364011", "mynos": "2026.11-21b9dfa",
      "depends": [], "programs": ["zmachine"]},
     {"name": "zork1", "version": "1.0", "description": "Zork I: The Great Underground Empire (Infocom, 1980; release 119), the story file, played by zmachine; type zork1",
      "license": "MIT", "archive": "packages/zork1-1.0.tar", "size": 92160,
