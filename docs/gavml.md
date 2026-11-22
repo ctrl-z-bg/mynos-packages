@@ -31,9 +31,23 @@ The game runs in steps of 20 ms (GAV's 50 a second), whatever the
 window's pace; its sounds are short tones, through MyNOS's sound
 service when there is one.
 
-Not yet: the network game of the original (a later version).
 
 `GAVML_DEBUG=1 gavml &` writes to MyNOS's log (the Log window, or `log`)
 once a second: the ball, the score, the frames drawn in that second and
 the milliseconds spent stepping the game and drawing it.
+
+## Over the network, with GavML or GAV
+
+A place can be **network**: a player on another machine, running GavML
+or GAV for Linux (its network game speaks the same UDP protocol, port
+7145). Choose the places and Play: GavML waits for the network's players,
+then plays, sending them what happens at every frame and taking their
+keys. On the other machine: **Join a game**, the server's address, a
+side; its keys are z c x or the arrows.
+
+Under QEMU, MyNOS is behind the host: to be a server it needs the port
+forwarded, `UDP=7145 tools/run-demo.sh` or `run-mynos.sh --udp 7145`, and
+the others join the host's address. Two MyNOS on the same computer: one
+started so, the other joins 10.0.2.2 (the host, as QEMU's network shows
+it).
 

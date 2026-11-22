@@ -68,7 +68,7 @@ How it works: the MyNOS Reference Manual, 9.8 and appendix H.9, and
 | [`snake`](docs/snake.md) | the snake that grows | GPL-2.0-or-later |
 | [`sudoku`](docs/sudoku.md) | sudoku, made on the spot, with hints | GPL-2.0-or-later |
 | [`solitaire`](docs/solitaire.md) | Klondike patience | GPL-2.0-or-later |
-| [`gavml`](docs/gavml.md) | GavML: GAV, GPL Arcade Volleyball ([gav](https://github.com/ctrl-z-bg/gav), 2002-), ported to OCaml for MyNOS: 1 or 2 players a side, keyboard or computer | GPL-2.0-or-later |
+| [`gavml`](docs/gavml.md) | GavML: GAV, GPL Arcade Volleyball ([gav](https://github.com/ctrl-z-bg/gav), 2002-), ported to OCaml for MyNOS: 1 or 2 players a side, keyboard, computer or network (with GAV too) | GPL-2.0-or-later |
 | `2048` | 2048, by Philip Xu ([2048-ml](https://github.com/pyx/2048-ml), 2014), unchanged | BSD-3-Clause |
 | [`minotaur`](docs/minotaur.md) | a text adventure inside MyNOS: you are a message, the Minotaur keeps the ports | GPL-2.0-or-later |
 | [`zmachine`](docs/zmachine.md) | a Z-machine interpreter: Infocom's and Inform's interactive fiction | GPL-2.0-or-later |
