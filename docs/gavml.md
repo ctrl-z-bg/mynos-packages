@@ -1,13 +1,13 @@
-# GAV
+# GavML
 
-GPL Arcade Volleyball, a remake of the DOS game Arcade Volleyball,
+GAV, GPL Arcade Volleyball, a remake of the DOS game Arcade Volleyball,
 written in C++ and SDL from 2002 (https://github.com/ctrl-z-bg/gav),
-ported to OCaml for MyNOS: the same physics, the same computer players,
+ported to OCaml for MyNOS (hence its name): the same physics, the same computer players,
 the "classic" pictures.
 
 ```
-mynos:/$ pkg install gav
-mynos:/$ gav &                 (or the menu's Applications)
+mynos:/$ pkg install gavml
+mynos:/$ gavml &                 (or the menu's Applications)
 ```
 
 Choose who plays each of the four places (Left 1 and Right 1 always
