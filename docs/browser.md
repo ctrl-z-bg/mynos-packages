@@ -27,5 +27,21 @@ mynos:/$ browser --dump https://text.npr.org/     (the page as text)
 - Redirections are followed; the page's charset is read (UTF-8, or
   Latin-1 and Windows-1252, converted).
 
-Not yet (the next phases): pictures (PNG, JPEG), forms that send,
-cookies, a little CSS.
+- Pictures: PNG and JPEG (baseline; progressive ones show their words),
+  fetched after the page, at their size, narrowed to the page; a picture
+  in a link follows it. SVG and GIF show their words.
+- Forms: text fields (a click gives them the keys; Enter sends),
+  passwords, check boxes, radio buttons, menus (a click shows the next
+  choice), buttons; sent by GET or POST. Cookies are kept while the
+  window is open, by site.
+
+- Tables: the simple ones (no tables or fields inside: data tables) as
+  grids, their columns as wide as their words need, narrowed to fit; the
+  others a row a line.
+- A little CSS: what the `hidden` attribute, a `display:none` or
+  `visibility:hidden` style, or a simple rule of a `<style>` block (a
+  tag, `.class`, `#id`) hides is not shown; text colours that read on
+  white are kept.
+
+Not: JavaScript, style sheets of their own (`<link rel=stylesheet>`),
+layout by CSS, GIF and SVG pictures.

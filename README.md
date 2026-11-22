@@ -57,7 +57,7 @@ How it works: the MyNOS Reference Manual, 9.8 and appendix H.9, and
 | [`life`](docs/life.md) | Conway's Game of Life, with famous patterns and RLE files | GPL-2.0-or-later |
 | `windtree` | a tree in the wind, written by MyNOS's agent inside MyNOS (the manual's 20.6) | GPL-2.0-or-later |
 | [`studio`](docs/studio/) | MyNOS Studio: an IDE for OCaml inside MyNOS; build and run, completion from the running services, Watch under the event recorder, services of your own, an agent that edits through Studio's own protocol | GPL-2.0-or-later |
-| [`browser`](docs/browser.md) | a simple web browser: HTML as text and links, http and https, no JavaScript; `browser --dump URL` | GPL-2.0-or-later |
+| [`browser`](docs/browser.md) | a simple web browser: text, links, pictures (PNG, JPEG), forms, cookies, tables; http and https, no JavaScript; `browser --dump URL` | GPL-2.0-or-later |
 
 **Games**
 
