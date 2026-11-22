@@ -13,7 +13,9 @@ standard input, so they work in pipes (`ls /disk | sort -r | head -3`).
 | `uniq [-cdui] [FILE]` | a run of equal lines once: `-c` counted, `-d` the repeated, `-u` the others |
 | `find [DIR...] [-name P] [-iname P] [-type f\|d] [-maxdepth N]` | the files under DIR whose name matches the pattern |
 | `du [-shb] [PATH...]` | space used, in KB: `-s` the total, `-h` in K/M/G, `-b` in bytes |
+| `df [-h]` | the file systems (`/` the RAM disk, `/tmp`, `/disk`): size, used, free, each service asked through its protocol |
 | `hexdump [-n N] [-s OFFSET] [FILE...]` | bytes in hexadecimal and as text |
+| `clip [TEXT...]` | the clipboard (the system's, shared with the windows): prints it; with words, or from a pipe (`ls \| clip`), copies |
 | `tree [-ad] [-L N] [DIR...]` | directories as a tree |
 
 `grep`'s patterns are OCaml's `Str` regular expressions, written as in

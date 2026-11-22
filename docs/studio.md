@@ -11,6 +11,9 @@ mynos:/$ studio                     (or the menu's Applications)
 mynos:/$ studio /disk/life.ml       (files to open)
 ```
 
+Its files go in `/disk/studio/` (the first program, `hello.ml`, New,
+New service, Open's folder); a path names any other place.
+
 ## The editor
 
 Files in tabs, OCaml coloured, line numbers; the keys of an editor
@@ -39,8 +42,8 @@ calls. **Recordings** replays the recording, step by step.
 
 ## Completion from the running system
 
-After `Sound.`, `Display.`, `Net.` (any module of a service's protocol)
-a list offers the requests of the service as it describes itself now:
+Nothing to press: as you type `Sound.`, `Display.`, `Net.` (any module
+of a service's protocol), and the letters after the dot, a list offers the requests of the service as it describes itself now:
 the constructor, its typed arguments, its reply, its documentation. Up,
 Down, Enter or Tab, Escape. A module of MyNOS's whose service is not
 running says so ("sound: not running").
