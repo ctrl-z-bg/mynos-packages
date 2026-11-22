@@ -17,7 +17,9 @@ index.json                    the packages: name, version, description,
                               licence, archive, size, BLAKE2b-256 hash,
                               the MyNOS they were built on, the packages
                               they need, their commands
-packages/NAME-VERSION.tar     one archive per package and version
+packages/NAME-VERSION-HASH.tar  one archive per package and build (HASH: the
+                              start of its BLAKE2b-256; the previous index's
+                              archives stay, for caches that still serve it)
 docs/NAME.md                  a package's documentation
 ```
 
