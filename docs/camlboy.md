@@ -9,7 +9,13 @@ mynos:/$ tobutobugirl                 (or: camlboy /disk/games/game.gb)
 ```
 
 Arrows: the cross; X: A; Z: B; Enter: Start; Space: Select; P pauses;
-Escape quits.
+M turns the sound off and on; Escape quits.
+
+**Sound.** The Game Boy's four channels (two squares, the wave, the
+noise) are emulated by MyNOS's `apu.ml` and played through the sound
+service, when there is a sound card (`run-demo.sh` gives one). Below 50
+frames a second for a few seconds the sound would stutter, so it turns
+itself off (the status line says "no sound (slow)").
 
 It needs a fast machine: the Game Boy's 60 frames a second, it reaches
 under QEMU with KVM (`run-demo.sh` uses it when it can) or on a PC;
