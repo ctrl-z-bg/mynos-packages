@@ -31,3 +31,8 @@ window's pace; its sounds are short tones, through MyNOS's sound
 service when there is one.
 
 Not yet: the network game of the original (a later version).
+
+`GAVML_DEBUG=1 gavml &` writes to MyNOS's log (the Log window, or `log`)
+once a second: the ball, the score, the frames drawn in that second and
+the milliseconds spent stepping the game and drawing it.
+
