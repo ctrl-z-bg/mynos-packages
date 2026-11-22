@@ -24,7 +24,8 @@ and the computer against two others.
 
 The rules are the original's: only the side that serves scores a point;
 a side may touch the ball three times; 15 points win, by two. Escape
-ends a game.
+ends a game; M turns the sounds off and on (the players' choice has a
+button too).
 
 The game runs in steps of 20 ms (GAV's 50 a second), whatever the
 window's pace; its sounds are short tones, through MyNOS's sound
