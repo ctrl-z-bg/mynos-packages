@@ -40,8 +40,14 @@ mynos:/$ browser --dump https://text.npr.org/     (the page as text)
   others a row a line.
 - A little CSS: what the `hidden` attribute, a `display:none` or
   `visibility:hidden` style, or a simple rule of a `<style>` block (a
-  tag, `.class`, `#id`) hides is not shown; text colours that read on
-  white are kept.
+  tag, `.class`, `#id`) hides is not shown, unless the element's own
+  style shows it; the rules of an `@media` block count only if it holds
+  for the window's width (`max-width`, `min-width`; not for print);
+  text colours that read on white are kept.
+- The address field edits at its cursor: a click places it, Left, Right,
+  Home, End move it.
 
 Not: JavaScript, style sheets of their own (`<link rel=stylesheet>`),
-layout by CSS, GIF and SVG pictures.
+layout by CSS, GIF and SVG pictures. Sites that need JavaScript say so:
+Google's search, past its cookie notice (whose buttons work), asks for
+it; DuckDuckGo's lite version (`lite.duckduckgo.com`) searches without.
