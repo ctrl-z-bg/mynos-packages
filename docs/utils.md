@@ -17,6 +17,7 @@ standard input, so they work in pipes (`ls /disk | sort -r | head -3`).
 | `hexdump [-n N] [-s OFFSET] [FILE...]` | bytes in hexadecimal and as text |
 | `clip [TEXT...]` | the clipboard (the system's, shared with the windows): prints it; with words, or from a pipe (`ls \| clip`), copies |
 | `tree [-ad] [-L N] [DIR...]` | directories as a tree |
+| `top [-b] [-n N] [-d SECS]` | the processes, the busiest first: CPU %, memory, threads, page faults a second, and the processor's load and the memory in use; again every SECS seconds (1) until `q`, or `-b` N tables (1) one after the other |
 
 `grep`'s patterns are OCaml's `Str` regular expressions, written as in
 Emacs: `.` `*` `+` `?` `[...]` `^` `$`, `\|` between alternatives,

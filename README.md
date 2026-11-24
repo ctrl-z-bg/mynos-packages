@@ -41,7 +41,7 @@ How it works: the MyNOS Reference Manual, 9.8 and appendix H.9, and
 
 | Package | What it is | Licence |
 |---|---|---|
-| [`utils`](docs/utils.md) | `grep`, `wc`, `head`, `tail`, `sort`, `uniq`, `find`, `du`, `df`, `hexdump`, `tree`, `clip` | GPL-2.0-or-later |
+| [`utils`](docs/utils.md) | `grep`, `wc`, `head`, `tail`, `sort`, `uniq`, `find`, `du`, `df`, `hexdump`, `tree`, `clip`, `top` | GPL-2.0-or-later |
 | [`calc`](docs/calc.md) | a calculator of exact numbers: integers without limit, fractions, factors | GPL-2.0-or-later |
 | [`manual`](docs/manual.md) | the MyNOS Reference Manual inside MyNOS: `man pkg`, `man Gui`, and a window to read it | GPL-2.0-or-later |
 | [`scheme`](docs/scheme.md) | Scheme (R5RS): OCS by Ville-Pertti Keinonen, changed for OCaml 5 | BSD-2-Clause |
