@@ -1,10 +1,11 @@
 # browser
 
 A simple web browser for MyNOS, written in OCaml: it reads HTML and
-shows its text and its links. No JavaScript and no style sheets: the
-pages that do not need them read well (Wikipedia's mobile edition,
-Hacker News, the text editions of news sites, documentation, blogs);
-the others show what their HTML holds.
+shows its text, links, pictures and forms, with a little CSS (what
+hides, colours, weight, alignment, the layout of lists and menus). No
+JavaScript: the pages that do not need it read well (Wikipedia, Hacker
+News, the text editions of news sites, documentation, blogs); the others
+show what their HTML holds.
 
 ```
 mynos:/$ pkg install browser
@@ -38,16 +39,24 @@ mynos:/$ browser --dump https://text.npr.org/     (the page as text)
 - Tables: the simple ones (no tables or fields inside: data tables) as
   grids, their columns as wide as their words need, narrowed to fit; the
   others a row a line.
-- A little CSS: what the `hidden` attribute, a `display:none` or
-  `visibility:hidden` style, or a simple rule of a `<style>` block (a
-  tag, `.class`, `#id`) hides is not shown, unless the element's own
-  style shows it; the rules of an `@media` block count only if it holds
-  for the window's width (`max-width`, `min-width`; not for print);
-  text colours that read on white are kept.
+- CSS, a little of it (`css.ml`): the page's `<style>` blocks and its
+  style sheets (`<link rel=stylesheet>`, fetched in parallel after the
+  page, which shows at once and takes its style when they come; kept for
+  the session), `@media` blocks for the window's width. Selectors: tag,
+  `.class`, `#id`, attributes, `*`, `:first-child`, `:last-child`,
+  `:not()`, `:link`, and the combinators (descendant, `>`, `+`, `~`); the
+  cascade (`!important`, specificity, order, the `style` attribute) and
+  `var()` with its fallback. What it does: `display` (`none` hides, a
+  block shown inline as menus do, or the other way), `visibility`,
+  "visually hidden" elements (`opacity:0`, clipped away, far off),
+  `color` (when it reads on white), `font-weight`, `text-decoration`,
+  `text-align` (centre, right), `white-space: pre`, `text-transform`,
+  `list-style: none`, margins of 1 em or more as a blank line. Not:
+  sizes, fonts, boxes, backgrounds, positions, flexbox and grid.
+  `BROWSER_TIMES=1 browser --dump URL` says where a page's time went.
 - The address field edits at its cursor: a click places it, Left, Right,
   Home, End move it.
 
-Not: JavaScript, style sheets of their own (`<link rel=stylesheet>`),
-layout by CSS, GIF and SVG pictures. Sites that need JavaScript say so:
+Not: JavaScript, layout by CSS boxes, GIF and SVG pictures. Sites that need JavaScript say so:
 Google's search, past its cookie notice (whose buttons work), asks for
 it; DuckDuckGo's lite version (`lite.duckduckgo.com`) searches without.
