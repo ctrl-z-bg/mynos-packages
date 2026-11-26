@@ -2,13 +2,15 @@
 
 The system at work, in a window, updated once a second:
 
-- the processor's load and the memory in use, each with a graph of its
-  last two minutes;
+- the processors' load (all of them together: on x86-64 MyNOS runs on
+  several, and the title says how many) and the memory in use, each
+  with a graph of its last two minutes;
 - the file systems, `/` (the RAM disk), `/tmp` and `/disk`: used and
   total space;
-- a table of the processes: pid, name, CPU (% of the processor in the
+- a table of the processes: pid, name, CPU (% of one processor in the
   last second), memory (its pages in memory, the RAM disk's apart),
-  threads, page faults a second, and the services it serves. A click on
+  threads, page faults a second, and the services it serves. A process
+  whose threads run on several processors at once can pass 100%. A click on
   a column's title sorts by it (CPU, memory, pid, name, faults).
 
 A click on a row selects a process; **End process**, clicked twice,
