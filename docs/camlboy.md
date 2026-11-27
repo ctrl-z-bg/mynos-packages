@@ -4,8 +4,9 @@ A Game Boy, in a window: CAMLBOY, the emulator written in OCaml by
 linoscope (MIT licence), with a window of MyNOS's.
 
 ```
-mynos:/$ pkg install tobutobugirl     (camlboy comes with it)
-mynos:/$ tobutobugirl                 (or: camlboy /disk/games/game.gb)
+mynos:/$ pkg install camlboy
+mynos:/$ camlboy tobutobugirl         the game that comes with it
+mynos:/$ camlboy /disk/roms/gb/game.gb
 ```
 
 Arrows: the cross; X: A; Z: B; Enter: Start; Space: Select; P pauses;
@@ -23,9 +24,17 @@ QEMU without KVM gives about a third. A button is down exactly while its
 key is held, several at once: Right held and X, and the jump goes on
 running.
 
-Games: `tobutobugirl` (Tangram Games, MIT and CC BY 4.0). Many other
-free Game Boy games (homebrew) can be copied to `/disk` and played the
-same way.
+**The game that comes with it** (in `/disk/pkg/camlboy/games`):
+`tobutobugirl`, Tobu Tobu Girl (Tangram Games, 2017; its code MIT, its
+art and music CC BY 4.0), an arcade platformer.
+
+**Other games and ROMs.** No boot ROM is needed (the machine starts
+where Nintendo's would leave it). Cartridges (`.gb`) of your own: copy
+them to `/disk/roms/gb/` (not into `/disk/pkg/camlboy`, which `pkg`
+empties when it updates the package) and give the path. The cartridges
+it knows: no mapper, MBC1, MBC2, MBC3 (without its clock); not MBC5, nor
+the Game Boy Color's. Many free homebrew games are on
+https://hh.gbdev.io.
 
 **A service.** Each camlboy registers `camlboy<pid>` and serves emu/1, as
 `zxspectrum` does: the CPU's registers, memory (cpu, rom, vram, ram), a

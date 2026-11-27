@@ -73,8 +73,9 @@ How it works: the MyNOS Reference Manual, 9.8 and appendix H.9, and
 | `2048` | 2048, by Philip Xu ([2048-ml](https://github.com/pyx/2048-ml), 2014), unchanged | BSD-3-Clause |
 | [`minotaur`](docs/minotaur.md) | a text adventure inside MyNOS: you are a message, the Minotaur keeps the ports | GPL-2.0-or-later |
 | [`zmachine`](docs/zmachine.md) | a Z-machine interpreter: Infocom's and Inform's interactive fiction | GPL-2.0-or-later |
-| [`camlboy`](docs/camlboy.md) | a Game Boy: CAMLBOY, by linoscope, in a window of MyNOS's | MIT |
-| `tobutobugirl` | Tobu Tobu Girl (Tangram Games, 2017), for the Game Boy; needs `camlboy` | MIT, CC BY 4.0 |
+| [`camlboy`](docs/camlboy.md) | a Game Boy: CAMLBOY, by linoscope, in a window of MyNOS's; with Tobu Tobu Girl (Tangram Games, 2017): `camlboy tobutobugirl` | MIT; the game: MIT and CC BY 4.0 |
+| [`zxspectrum`](docs/zxspectrum.md) | a ZX Spectrum 48K, MyNOS's own; with two games: `zxspectrum glazx`, `zxspectrum snake` | MIT; the ROM: Amstrad; the games: MIT |
+| [`msx`](docs/msx.md) | an MSX1, MyNOS's own, with C-BIOS; with Westen House (Santiago Ontañón, 2021): `msx westen` | MIT; C-BIOS: BSD; the game: Apache-2.0 |
 | `zork1` | Zork I: The Great Underground Empire (Infocom, 1980); needs `zmachine` | MIT |
 | `zork2` | Zork II: The Wizard of Frobozz (Infocom, 1981); needs `zmachine` | MIT |
 | `zork3` | Zork III: The Dungeon Master (Infocom, 1982); needs `zmachine` | MIT |

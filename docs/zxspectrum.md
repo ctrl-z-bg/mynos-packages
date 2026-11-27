@@ -4,9 +4,24 @@ A ZX Spectrum 48K, in a window: MyNOS's own emulator, written in OCaml
 (MIT), with the Spectrum's ROM (Amstrad's permission: ROM-LICENSE).
 
 ```
-mynos:/$ pkg install glazx            (zxspectrum comes with it)
-mynos:/$ glazx                        (or: zxspectrum /disk/games/game.tap)
+mynos:/$ pkg install zxspectrum
+mynos:/$ zxspectrum glazx             a game that comes with it
+mynos:/$ zxspectrum /disk/roms/zx/game.tap
 ```
+
+**Games that come with it** (in `/disk/pkg/zxspectrum/games`, named
+without their extension): `glazx`, GLAZX (Eugeny Novikov, 2019, MIT), an
+arcade duel for two at one keyboard (W A S D and F; I J K L and O); `snake`, Snake (David Crespo, 2020, MIT), for one player (1 to 9
+the speed, Enter, then W A S D). Their licences and notes are beside
+them.
+
+**Other games and ROMs.** Nothing proprietary is needed: the Spectrum's
+ROM comes with the package (Amstrad allows it to be given with an
+emulator: `ROM-LICENSE`). Tapes (`.tap`) and snapshots (`.z80`, `.sna`,
+of a 48K) of your own: copy them to `/disk/roms/zx/` (not into
+`/disk/pkg/zxspectrum`, which `pkg` empties when it updates the
+package) and give the path. Many free ones are on
+https://spectrumcomputing.co.uk; `.tzx` tapes are not read.
 
 A `.tap` loads at once (its blocks given to the ROM's loader), after the
 machine has typed `LOAD ""` itself; `.sna` and `.z80` snapshots (48K)
