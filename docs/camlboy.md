@@ -26,3 +26,10 @@ running.
 Games: `tobutobugirl` (Tangram Games, MIT and CC BY 4.0). Many other
 free Game Boy games (homebrew) can be copied to `/disk` and played the
 same way.
+
+**A service.** Each camlboy registers `camlboy<pid>` and serves emu/1, as
+`zxspectrum` does: the CPU's registers, memory (cpu, rom, vram, ram), a
+screenshot; pause, steps, frames, breakpoints on the PC; buttons pressed
+(`A B START SELECT UP DOWN LEFT RIGHT`). Not here yet: a disassembler,
+watchpoints, saved states; a Game Boy has no text screen. `camlboy
+--headless ROM.gb`: the machine and its service without a window.
