@@ -45,9 +45,9 @@
      "license": "GPL-2.0-or-later", "archive": "packages/minotaur-1.0-21c569ffcf99.tar", "size": 286720,
      "blake2b-256": "21c569ffcf9996562072a6004ed0ba32b57dcedc4f83f7b23b32fd3216353cbc", "mynos": "2026.11-2c86cf9",
      "depends": [], "programs": ["minotaur"]},
-    {"name": "msx", "version": "1.0", "description": "An MSX1, in a window and as a service (emu/1: msx<pid>): cartridges (MegaROMs too), the TMS9918A, the PSG; C-BIOS with it, a real BIOS if you have one; a game with it (msx westen); type msx [cartridge.rom]",
-     "license": "MIT; C-BIOS: BSD; the game: Apache-2.0", "archive": "packages/msx-1.0-22c4540d2814.tar", "size": 829440,
-     "blake2b-256": "22c4540d28148c5e9e149d94c74c89dff58eb4e91e8f0b2dc2567e346b1f17ed", "mynos": "1.0.1+15-retro-f4e19c5",
+    {"name": "msx", "version": "1.1", "description": "An MSX1, in a window and as a service (emu/1: msx<pid>): cartridges (MegaROMs too), the TMS9918A, the PSG; C-BIOS with it, a real BIOS if you have one; a game with it (msx westen); type msx [cartridge.rom]",
+     "license": "MIT; C-BIOS: BSD; the game: Apache-2.0", "archive": "packages/msx-1.1-615fc1c55a3e.tar", "size": 839680,
+     "blake2b-256": "615fc1c55a3e68586b9de8996161607cf81d836041af7b14ce952a495896efd0", "mynos": "1.0.1+17-retro-a05f58d",
      "depends": [], "programs": ["msx"]},
     {"name": "paint", "version": "1.1", "description": "Drawing with the mouse, in a window: pencil, brush, shapes, fill; pictures saved as PNG, opened from PNG, BMP, PPM",
      "license": "GPL-2.0-or-later", "archive": "packages/paint-1.1-2e0ede25be27.tar", "size": 460800,
@@ -109,9 +109,9 @@
      "license": "MIT", "archive": "packages/zork3-1.0-e0ab4f328380.tar", "size": 102400,
      "blake2b-256": "e0ab4f328380a1ce4b781b845667e6eaa26272bef76b3cedcffc36e4174f243a", "mynos": "2026.11-2c86cf9",
      "depends": ["zmachine"], "programs": ["zork3"]},
-    {"name": "zxspectrum", "version": "1.1", "description": "A ZX Spectrum 48K, in a window and as a service (emu/1: zx<pid>): tapes loaded at once, snapshots, the beeper; two games with it (zxspectrum glazx, zxspectrum snake); type zxspectrum [file.tap]",
-     "license": "MIT; the ROM: Amstrad; the games: MIT", "archive": "packages/zxspectrum-1.1-eb66c3d3af2d.tar", "size": 757760,
-     "blake2b-256": "eb66c3d3af2d79e7671f25b82971eff9cda7541f79963da812de1377d54ee233", "mynos": "1.0.1+15-retro-f4e19c5",
+    {"name": "zxspectrum", "version": "1.2", "description": "A ZX Spectrum 48K, in a window and as a service (emu/1: zx<pid>): tapes loaded at once, snapshots, the beeper; two games with it (zxspectrum glazx, zxspectrum snake); type zxspectrum [file.tap]",
+     "license": "MIT; the ROM: Amstrad; the games: MIT", "archive": "packages/zxspectrum-1.2-b457e27e00b4.tar", "size": 768000,
+     "blake2b-256": "b457e27e00b4665625fe170a1eb6db19f87dcda673d1d807237ccc0728e895ed", "mynos": "1.0.1+17-retro-a05f58d",
      "depends": [], "programs": ["zxspectrum"]}
   
   ]
