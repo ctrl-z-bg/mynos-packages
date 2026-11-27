@@ -29,6 +29,10 @@
      "license": "GPL-2.0-or-later", "archive": "packages/gavml-1.3-1216596ffa9e.tar", "size": 593920,
      "blake2b-256": "1216596ffa9e117e94a5671b95d6b1fa55768be22bb7072ad79e5f66250ffced", "mynos": "2026.11-2c86cf9",
      "depends": [], "programs": ["gavml"]},
+    {"name": "glazx", "version": "1.0", "description": "GLAZX (Eugeny Novikov, 2019), an arcade duel for two at one keyboard on the ZX Spectrum 48K, played by zxspectrum; type glazx",
+     "license": "MIT", "archive": "packages/glazx-1.0-5e44e95c6e6c.tar", "size": 40960,
+     "blake2b-256": "5e44e95c6e6c73b7ed98fd348735543c276f96fdf3c6f7adec3765859df1f931", "mynos": "1.0.1+6-c199b3d",
+     "depends": ["zxspectrum"], "programs": ["glazx"]},
     {"name": "life", "version": "1.0", "description": "Conway's Game of Life, in a window: famous patterns to place, drawing with the mouse, patterns read and saved in RLE",
      "license": "GPL-2.0-or-later", "archive": "packages/life-1.0-6cdd6e9977b8.tar", "size": 399360,
      "blake2b-256": "6cdd6e9977b84817be064f3c59ce18efd58bca301a79185c1d6ef8c964765b7a", "mynos": "2026.11-2c86cf9",
@@ -108,6 +112,10 @@
     {"name": "zork3", "version": "1.0", "description": "Zork III: The Dungeon Master (Infocom, 1982; release 25), the story file, played by zmachine; type zork3",
      "license": "MIT", "archive": "packages/zork3-1.0-e0ab4f328380.tar", "size": 102400,
      "blake2b-256": "e0ab4f328380a1ce4b781b845667e6eaa26272bef76b3cedcffc36e4174f243a", "mynos": "2026.11-2c86cf9",
-     "depends": ["zmachine"], "programs": ["zork3"]}
+     "depends": ["zmachine"], "programs": ["zork3"]},
+    {"name": "zxspectrum", "version": "1.0", "description": "A ZX Spectrum 48K, in a window and as a service (emu/1: zx<pid>): tapes loaded at once, snapshots, the beeper; type zxspectrum [file.tap]",
+     "license": "MIT; the ROM: Amstrad", "archive": "packages/zxspectrum-1.0-002a3a6b4434.tar", "size": 706560,
+     "blake2b-256": "002a3a6b4434cbbda5b7fc87345a5b1d401f43105ea625e5d9f88f324d276b1b", "mynos": "1.0.1+6-c199b3d",
+     "depends": [], "programs": ["zxspectrum"]}
   ]
 }
