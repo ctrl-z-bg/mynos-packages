@@ -5,6 +5,10 @@
      "license": "BSD-3-Clause", "archive": "packages/2048-1.0-fe9c2d99646f.tar", "size": 440320,
      "blake2b-256": "fe9c2d99646fd73f8ad6fc8807dcb21aff31d45bd28668d5efa9f7452931caa1", "mynos": "2026.11-2c86cf9",
      "depends": [], "programs": ["2048"]},
+    {"name": "bench", "version": "1.0", "description": "How fast this MyNOS is: the processor (OCaml), the system (system calls, IPC, threads, programs, files), the network and, in a window, the drawing; each measure in its unit and as a score (1000: the reference PC under KVM); runs kept and compared; type bench, or bench -t in the terminal",
+     "license": "GPL-2.0-or-later", "archive": "packages/bench-1.0-c1634bd5ed95.tar", "size": 512000,
+     "blake2b-256": "c1634bd5ed95761fc611d89499309748eaeb522531e595627f928f71a8786052", "mynos": "1.0.1+21-retro-d57e6e4",
+     "depends": [], "programs": ["bench"]},
     {"name": "blocks", "version": "1.0", "description": "Falling blocks, in a window: fill a row and it goes; arrows move and turn the piece, Space drops it",
      "license": "GPL-2.0-or-later", "archive": "packages/blocks-1.0-d9ba357286e5.tar", "size": 389120,
      "blake2b-256": "d9ba357286e5f9727840dd3283edcdcb984204993bb950bd1d1ca5673f4d7ea3", "mynos": "2026.11-2c86cf9",
@@ -45,10 +49,10 @@
      "license": "GPL-2.0-or-later", "archive": "packages/minotaur-1.0-21c569ffcf99.tar", "size": 286720,
      "blake2b-256": "21c569ffcf9996562072a6004ed0ba32b57dcedc4f83f7b23b32fd3216353cbc", "mynos": "2026.11-2c86cf9",
      "depends": [], "programs": ["minotaur"]},
-    {"name": "msx", "version": "1.1", "description": "An MSX1, in a window and as a service (emu/1: msx<pid>): cartridges (MegaROMs too), the TMS9918A, the PSG; C-BIOS with it, a real BIOS if you have one; a game with it (msx westen); type msx [cartridge.rom]",
-     "license": "MIT; C-BIOS: BSD; the game: Apache-2.0", "archive": "packages/msx-1.1-615fc1c55a3e.tar", "size": 839680,
-     "blake2b-256": "615fc1c55a3e68586b9de8996161607cf81d836041af7b14ce952a495896efd0", "mynos": "1.0.1+17-retro-a05f58d",
-     "depends": [], "programs": ["msx"]},
+    {"name": "msx", "version": "2.0", "description": "An MSX1 or an MSX2, in a window and as a service (emu/1: msx<pid>, msx2<pid>): cartridges (MegaROMs too), the TMS9918A or the V9938, the PSG, on the MSX2 a memory mapper and the clock; C-BIOS with it, a real BIOS if you have one; a game with it (msx westen); type msx or msx2 [cartridge.rom]",
+     "license": "MIT; C-BIOS: BSD; the game: Apache-2.0", "archive": "packages/msx-2.0-5025dab9407d.tar", "size": 983040,
+     "blake2b-256": "5025dab9407dde33b37f2a63587a41a78625c452df5ee62553977c0fb42733f9", "mynos": "1.0.1+21-retro-d57e6e4",
+     "depends": [], "programs": ["msx", "msx2"]},
     {"name": "paint", "version": "1.1", "description": "Drawing with the mouse, in a window: pencil, brush, shapes, fill; pictures saved as PNG, opened from PNG, BMP, PPM",
      "license": "GPL-2.0-or-later", "archive": "packages/paint-1.1-2e0ede25be27.tar", "size": 460800,
      "blake2b-256": "2e0ede25be2721785262695d6cd0cd0c44592e1b4a9c6ebbed442cd9638098a7", "mynos": "2026.11-2c86cf9",
@@ -113,6 +117,7 @@
      "license": "MIT; the ROM: Amstrad; the games: MIT", "archive": "packages/zxspectrum-1.2-b457e27e00b4.tar", "size": 768000,
      "blake2b-256": "b457e27e00b4665625fe170a1eb6db19f87dcda673d1d807237ccc0728e895ed", "mynos": "1.0.1+17-retro-a05f58d",
      "depends": [], "programs": ["zxspectrum"]}
+  
   
   ]
 }

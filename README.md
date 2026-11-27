@@ -59,6 +59,7 @@ How it works: the MyNOS Reference Manual, 9.8 and appendix H.9, and
 | [`studio`](docs/studio/) | MyNOS Studio: an IDE for OCaml inside MyNOS; build and run, completion from the running services, Watch under the event recorder, services of your own, an agent that edits through Studio's own protocol | GPL-2.0-or-later |
 | [`browser`](docs/browser.md) | a simple web browser: text, links, pictures (PNG, JPEG), forms, cookies, tables, CSS style sheets; http and https, no JavaScript; `browser --dump URL` | GPL-2.0-or-later |
 | [`sysmonitor`](docs/sysmonitor.md) | the system at work: CPU and memory with their graphs, the disks, the processes (CPU, memory, threads, page faults), ending one; needs a MyNOS of 2026-11-23 or later | GPL-2.0-or-later |
+| [`bench`](docs/bench/) | how fast this MyNOS is: the processor, system calls, IPC, threads, files, the network, the drawing; a score (1000: MyNOS under KVM on the PC it is developed on), runs compared; `bench -t` in the terminal, and a tool for the agent | GPL-2.0-or-later |
 
 **Games**
 
@@ -75,7 +76,7 @@ How it works: the MyNOS Reference Manual, 9.8 and appendix H.9, and
 | [`zmachine`](docs/zmachine.md) | a Z-machine interpreter: Infocom's and Inform's interactive fiction | GPL-2.0-or-later |
 | [`camlboy`](docs/camlboy.md) | a Game Boy: CAMLBOY, by linoscope, in a window of MyNOS's; with Tobu Tobu Girl (Tangram Games, 2017): `camlboy tobutobugirl` | MIT; the game: MIT and CC BY 4.0 |
 | [`zxspectrum`](docs/zxspectrum.md) | a ZX Spectrum 48K, MyNOS's own; with two games: `zxspectrum glazx`, `zxspectrum snake` | MIT; the ROM: Amstrad; the games: MIT |
-| [`msx`](docs/msx.md) | an MSX1, MyNOS's own, with C-BIOS; with Westen House (Santiago Ontañón, 2021): `msx westen` | MIT; C-BIOS: BSD; the game: Apache-2.0 |
+| [`msx`](docs/msx.md) | an MSX1 and an MSX2 (`msx2`), MyNOS's own, with C-BIOS; with Westen House (Santiago Ontañón, 2021): `msx westen` | MIT; C-BIOS: BSD; the game: Apache-2.0 |
 | `zork1` | Zork I: The Great Underground Empire (Infocom, 1980); needs `zmachine` | MIT |
 | `zork2` | Zork II: The Wizard of Frobozz (Infocom, 1981); needs `zmachine` | MIT |
 | `zork3` | Zork III: The Dungeon Master (Infocom, 1982); needs `zmachine` | MIT |
@@ -86,5 +87,5 @@ licence in 2025 ([historicalsource/zork1](https://github.com/historicalsource/zo
 [zork2](https://github.com/historicalsource/zork2),
 [zork3](https://github.com/historicalsource/zork3)), unchanged; the
 games' names are trademarks, which the licence does not cover.
-Two packages give MyNOS's agent a tool: `wiki` (`wikipedia`) and `calc`
-(`calculate`).
+Three packages give MyNOS's agent a tool: `wiki` (`wikipedia`), `calc`
+(`calculate`) and `bench` (`benchmark`).
